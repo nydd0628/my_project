@@ -4,7 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>my_leetcode</title>
+  <link rel="stylesheet" href="./css/clear.css">
   <link rel="stylesheet" href="./css/head.css">
+  <link rel="stylesheet" href="./css/content.css">
+  <link rel="stylesheet" href="./css/studyplan.css">
+  <link rel="stylesheet" href="./css/sidebar.css">
+  <link rel="stylesheet" href="./css/passages.css">
+  <link rel="stylesheet" href="./css/mainbody.css">
+  <link rel="stylesheet" href="./css/contentguide.css">
 </head>
 <body>
   <!-- 头部导航 -->
@@ -20,23 +27,93 @@
           <li><a href="#">竞赛</a></li>
           <li><a href="#">讨论</a></li>
           <li><a href="#">求职</a></li>
-          <li>商店</li>
+          <li id="store"><a href="#">商店</a> <img src="./image/store.png" alt=""></li>
         </ul>
       </div>
     </div>
     <div class="after">
       <div class="search"></div>
       <ul>
-        <li>注册</li>
+        <li><a href="#">注册</a></li>
         <li>或</li>
-        <li>登录</li>
+        <li><a href="#">登录</a></li>
       </ul>
       <div class="outer"><div class="vip"><a href="#">plus会员</a></div></div>
     </div>
   </div>
 
+  <div class="storeextent">
+    <div>
+      <ul>
+        <li>精品商城</li>
+        <li>力扣周边</li>
+        <li>plus会员</li>
+      </ul>
+    </div>
+  </div>
+  <script src="./js/store.js"></script>
+  <!-- 内容栏 -->
+  <div class="mainbody">
+    <div class="content">
+      <div class="studyplan">
+        <div class="title">
+          学习计划
+        </div>
+        <div class="items">
+          <ul>
+            <li>
+              <img src="./image/study1.png" alt="">
+              <div>
+                <div class="topic">百道经典面试题</div>
+                <div class="describe">最经典 150 题，掌握面试所有知识点</div>
+              </div>
+            </li>
+            <li>
+              <img src="./image/study2.png" alt="">
+              <div>
+                <div class="topic">LeetCode 热题 100</div>
+                <div class="describe">力扣最受刷题发烧友欢迎的 100 道题</div>
+              </div>
+            </li>
+            <li>
+              <img src="./image/study3.png" alt="">
+              <div>
+                <div class="topic">动态规划（基础版）</div>
+                <div class="describe">更细的知识点拆分，让入门更简单</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="contentguide">
+  
+      </div>
+      <div class="passages">
 
-  <!-- 学习计划 -->
-  <div></div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <!-- 轮播图部分 -->
+      <div class="carousel">
+        <div class="box-img">
+          <img src="./image/卡芙卡.jpg" width="360px" height="200px">
+        </div>
+        <div class="left">
+          &lt
+        </div>
+        <div class="right">
+          &gt
+        </div>
+        <div class="change">
+          <ul>
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <script src="./js/carousel.js"></script>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

@@ -1,0 +1,8 @@
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 250px;
+  margin-right: 5px;
+  width: 800px;
+  /*background-color: red;*/
+}

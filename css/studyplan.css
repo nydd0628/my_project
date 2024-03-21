@@ -1,0 +1,43 @@
+.studyplan{
+  height: 120px;
+  width: 750px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.studyplan .title{
+  margin-left: 5px;
+  height: 25px;
+  width: 500px;
+  font-size: 20px;
+}
+.studyplan .items{
+  margin-top: 10px;
+}
+.studyplan .items ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+.studyplan .items li{
+  box-sizing: border-box;
+  border: 2px solid rgb(128, 128, 128 ,0.5);
+  border-radius: 5px;
+  box-shadow: 2px 5px 10px 1px rgba(0, 0, 0,0.5) ;
+  width: 240px;
+  display: flex;
+  margin-right: 10px;
+  background-color: rgba(215, 215, 215,0.5);
+}
+.studyplan .items img{
+  height: 70px;
+  width: 70px;
+}
+.studyplan .items li div{
+  margin-left: 2px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.studyplan .items li .describe{
+  font-size: 13px;
+}

@@ -1,13 +1,8 @@
-.header a{
-  text-decoration: none;
-  color: grey;
-}
 .header{
   display: flex;
   height: 50px;
   width: 100%;
   border: 1px solid rgb(128, 128, 128,0.2);
-  margin: 0,0,0,40px;
   padding-left: 250px;
   padding-right: 200px;
   box-sizing: border-box;
@@ -35,11 +30,17 @@
 }
 .header .guide ul{
   display: flex;
+  align-items: center;
 }
 .header .guide li{
+  margin-top: 10px;
   margin-right: 25px;
-  list-style: none;
-  color: black;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+}
+.header .guide li img{
+  display: block;
 }
 .header .after{
   display: flex;
@@ -56,16 +57,39 @@
 }
 
 .header .after li{
-  margin-right: 20px;
+  margin-left: 20px;
   list-style: none;
   color: black;
 }
 .header .outer{
   background-color: rgb(255, 165, 0 , 0.3);
+  margin-left: 20px;
   height: 30px;
   width: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10%;
+}
+
+.storeextent{
+  height: 70px;
+  z-index: 1;
+}
+.storeextent div
+{
+  margin-left: 650px;
+  display: none;
+}
+.storeextent ul
+{
+  color: orange;
+  border: 1px solid orange;
+  box-shadow: 1px 3px 5px 1px rgba(0, 0, 0,0.2);
+  border-radius: 5px;
+  width: 75px;
+  height: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(234, 234, 234,0.2);
 }

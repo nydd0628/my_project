@@ -1,0 +1,75 @@
+.sidebar
+{
+  display: fixed;
+  margin-right: 250px;
+  background-color: black;
+  width: 400px;
+  height: 600px;
+}
+
+/* 轮播图部分 */
+.sidebar .carousel{
+  width: 360px;
+  height: 210px;
+  position: relative;
+  border: 1px solid gainsboro;
+}
+
+.sidebar .carousel .box-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sidebar .carousel .left{
+  border-radius: 0 5px 0 5px;
+  top: 85px;
+  font-size: 20px;
+  position: absolute;
+  width: 15px;
+  height: 30px;
+  background-color: rgba(255, 255, 255,0.1);
+  transition: all 0.5s;
+}
+.sidebar .carousel .left:hover
+{
+  background-color: rgba(255, 255, 255,0.6);
+}
+
+.sidebar .carousel .right{
+  border-radius: 0 5px 0 5px;
+  right: 0;
+  top: 85px;
+  font-size: 20px;
+  position: absolute;
+  width: 15px;
+  height: 30px;
+  background-color: rgba(255, 255, 255,0.1);
+  transition: all,0.3s;
+}
+.sidebar .carousel .right:hover
+{
+  background-color: rgba(255, 255, 255,0.6);
+}
+
+.sidebar .carousel .change{
+  position: absolute;
+  bottom: 5%;
+  left: 45%;
+}
+.sidebar .carousel .change ul{
+  width: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar .carousel .change li{
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255,0.5);
+  float: left;
+  transition: all,0.3s;
+}
+.sidebar .carousel .change .active{
+  background-color: white;
+}
