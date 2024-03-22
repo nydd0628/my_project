@@ -1,7 +1,7 @@
 const img = document.querySelector('.sidebar .box-img img')
 const carousel = document.querySelector('.sidebar .carousel')
 const left = document.querySelector('.sidebar .left')
-const right = document.querySelector('.sidebar .right')
+const right = document.querySelector('.sidebar .right')      
 const one = document.querySelector('.sidebar .change li:nth-child(1)')
 const two = document.querySelector('.sidebar .change li:nth-child(2)')
 const three = document.querySelector('.sidebar .change li:nth-child(3)')
@@ -54,7 +54,6 @@ carousel.addEventListener('mouseenter',()=>{
   two.style.height = '15px'
   three.style.width = '15px'
   three.style.height = '15px'
-
 })
 carousel.addEventListener('mouseleave',()=>{
   one.style.width = '10px'
@@ -63,5 +62,4 @@ carousel.addEventListener('mouseleave',()=>{
   two.style.height = '10px'
   three.style.width = '10px'
   three.style.height = '10px'
-
 })

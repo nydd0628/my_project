@@ -3,3 +3,14 @@
   /*background-color: grey;*/
   padding-top: 20px;
 }
+
+.clearfix::before,
+.clearfix::after
+{
+  content: "";
+  display: table;
+}
+.clearfix::after
+{
+  clear:both;
+}

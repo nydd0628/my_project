@@ -2,23 +2,30 @@
 {
   display: fixed;
   margin-right: 250px;
-  background-color: black;
   width: 400px;
   height: 600px;
+  opacity: 0;
 }
 
 /* 轮播图部分 */
 .sidebar .carousel{
   width: 360px;
-  height: 210px;
+  height: 200px;
   position: relative;
-  border: 1px solid gainsboro;
+  margin-top: 10px;
+  margin-left: 15px;
+  border-radius: 20px;
+  box-shadow: 1px 5px 8px 1px rgb(0, 0, 0,0.3);
 }
 
 .sidebar .carousel .box-img{
   position: absolute;
   top: 0;
   left: 0;
+}
+.sidebar .carousel .box-img img{
+  border-radius: 20px;
+  border: 1px solid white;
 }
 
 .sidebar .carousel .left{
