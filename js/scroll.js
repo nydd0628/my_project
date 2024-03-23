@@ -1,8 +1,7 @@
 const contentguide = document.querySelector('.contentguide')
 const sidebar = document.querySelector('.sidebar')
 window.addEventListener('scroll',()=>{
-  n = 0
-  n = document.documentElement.scrollTop
+  let n = document.documentElement.scrollTop
   console.log(n)
   if(n >= 300)
   {

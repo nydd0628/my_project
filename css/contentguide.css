@@ -1,7 +1,12 @@
+.guidebox{
+  height: 50px;
+  width: 750px;
+}
 .contentguide{
   width: 750px;
   height: 50px;
-  display: block;
+  background-color: white;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .contentguide ul{

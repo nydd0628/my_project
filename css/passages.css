@@ -1,5 +1,60 @@
 .passages{
-  background-color: palegoldenrod;
   width: 750px;
   height: 10000px;
+}
+
+.passages li{
+  border-bottom: 1px solid black;
+  margin-top: 10px;
+}
+.passages li .paper{
+  display: flex;
+  width: 750px;
+  height: 150px;
+}
+
+.passages .paper .imgbox{
+
+  background-color: beige;
+}
+
+.passages .paper .content{
+  margin-left: 0;
+  padding-left: 10px;
+  width: 500px;
+}
+.passages .paper .content .title{
+  margin-top: 5px;
+  font-size: larger;
+  width: 500px;
+  margin-bottom: 5px;
+}
+.passages .paper .content .brief{
+  overflow: hidden;
+  width: 500px;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+.passages .paper .content .tag
+{
+  display: flex;
+}
+.passages .paper .content .tag div
+{
+  text-align: center;
+  background-color: rgb(238, 238, 238 ,0.3);
+  width: 50px;
+  height: 25px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(220, 220, 220 , 0.2);
+  box-shadow: 2px 5px 6px 1px rgba(0, 0, 0,0.3) ;
+}
+
+.passages .pp img{
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 100%;
+  margin-right: 10px;
 }
