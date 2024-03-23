@@ -81,9 +81,14 @@
   background-color: white;
 }
 
+/* 功能 */
+.sidebar .function{
+  display: flex;
+  margin-top: 30px;
+  padding-left: 50px;
+}
 /* 黑夜模式部分 */
 .sidebar .dark{
-  margin: 30px 50px 0 15px;
   display: flex;
   flex-wrap: wrap;
   height: 50px;
@@ -121,4 +126,32 @@ margin-right: 10px;
   right: 0;
   top: 0;
   opacity: 0;
+}
+
+/* 返回部分 */
+.sidebar .guidance{
+  margin-left: 100px;
+  display: flex;
+  border: 1px solid blanchedalmond;
+  border-radius: 15px;
+  box-shadow: 2px 5px 10px 1px rgba(0, 0, 0,0.3) ;
+}
+.sidebar .guidance .tip{
+  width: 35px;
+  height: 35px;
+}
+/* 倒计时 */
+.sidebar .timeout ul{
+  margin-top: 30px;
+  margin-left: 15px;
+  width: 360px;
+  height: 70px;
+  display: flex;
+}
+.sidebar .timeout li{
+  background-color: rgb(228, 228, 228);
+  font-size: 50px;
+  color: black;
+  margin-left: 25px;
+  border-radius: 15px;
 }

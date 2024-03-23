@@ -2,7 +2,6 @@ const contentguide = document.querySelector('.contentguide')
 const sidebar = document.querySelector('.sidebar')
 window.addEventListener('scroll',()=>{
   let n = document.documentElement.scrollTop
-  console.log(n)
   if(n >= 300)
   {
     contentguide.style.position = 'fixed'

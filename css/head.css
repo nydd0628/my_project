@@ -34,7 +34,6 @@
 .header .guide li{
   margin-top: 10px;
   margin-right: 25px;
-  color: rgb(0, 0, 0);
   display: flex;
   align-items: center;
 }
@@ -56,7 +55,6 @@
 .header .after li{
   margin-left: 20px;
   list-style: none;
-  color: black;
 }
 .header .outer{
   background-color: rgb(255, 165, 0 , 0.3);
