@@ -14,6 +14,10 @@ whitemode.addEventListener(
       {
         a[i].style.color = 'white'
       }
+      for(let i = 0 ; i < details.length ; i++)
+      {
+        details[i].style.background = 'black'
+      }
       body.style.background = 'rgba(0,0,0,0.9)'
       body.style.color = 'white'
       contentguide.style.background = 'rgba(0,0,0,0.9)'
@@ -32,6 +36,10 @@ blackmode.addEventListener(
       for(let i = 0 ; i < a.length ; i++)
       {
         a[i].style.color = 'black'
+      }
+      for(let i = 0 ; i < details.length ; i++)
+      {
+        details[i].style.background = 'white'
       }
       contentguide.style.background = 'white'
       body.style.color = 'black'

@@ -5,19 +5,71 @@
 
 .passages li{
   border-bottom: 1px solid black;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .passages li .paper{
+  position: relative;
   display: flex;
   width: 750px;
   height: 150px;
 }
-
-.passages .paper .imgbox{
-
-  background-color: beige;
+.passages .paper .details{
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 35px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid rgb(220, 220, 220 , 0.2);
+  box-shadow: 2px 5px 6px 1px rgba(0, 0, 0,0.3) ;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  padding: 5px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  opacity: 0;
+  transition: all 0.5s;
 }
-
+.passages .paper .details .imgbox{
+  display: flex;
+  width: 200px;
+  height: 40px;
+  align-items: center;
+}
+.passages .paper .details .imgbox img{
+  border-radius: 100%;
+  margin-right: 25px;
+}
+.passages .paper .details .brief{
+  margin-top: 10px;
+  width: 200px;
+  height: 100px;
+  font-size: 13px;
+}
+.passages .paper .details .operate{
+  margin-top: 5px;
+  height: 35px;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 1000;
+  font-size: large;
+}
+.passages .paper .details .operate .text{
+  text-align: center;
+  width: 70px;
+  border-radius: 10px;
+  border: 1px solid rgb(220, 220, 220 , 0.5);
+  background-color: rgb(0, 128, 0,0.7);
+}
+.passages .paper .details .operate .subscribe{
+  text-align: center;
+  width: 70px;
+  border-radius: 10px;
+  border: 1px solid rgb(220, 220, 220 , 0.5);
+  background-color: rgb(0, 128, 0,0.7);
+}
 .passages .paper .content{
   margin-left: 0;
   padding-left: 10px;
