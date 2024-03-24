@@ -15,10 +15,10 @@ window.addEventListener('scroll',()=>{
     sidebar.style.position = 'fixed'
     sidebar.style.top = '30px'
     sidebar.style.left = '1050px'
-    sidebar.style.opacity = '1'
+    sidebar.style.display = 'block'
   }
   else{
-    sidebar.style.opacity = '0'
+    sidebar.style.display = 'none'
   }
 })
 

@@ -1,10 +1,10 @@
 const whitemode = document.querySelector('.sidebar .dark .white')
+const details = document.querySelectorAll('.details')
 const body = document.querySelector('body')
 const a = document.querySelectorAll('a')
 const describe = document.querySelector('.sidebar .dark .describe')
 const blackmode = document.querySelector('.sidebar .dark .black')
 let control3 = 0
-console.log(a)
 whitemode.addEventListener(
   'click',()=>{
     if(control3 === 0)

@@ -12,10 +12,51 @@
   <link rel="stylesheet" href="./css/passages.css">
   <link rel="stylesheet" href="./css/mainbody.css">
   <link rel="stylesheet" href="./css/contentguide.css">
+  <link rel="stylesheet" href="./css/sign.css">
 </head>
 <body>
   <!-- 头部导航 -->
   <div class="header">
+    <div class="sign">
+      <div class="signin">
+        <div class="title">
+          用户登录
+        </div>
+        <div class="formcontain">
+          <form>
+            <input id= "phone1"type="text" placeholder="输入手机号" style="width: 300px ;height:40px; margin-bottom : 15px;">
+            <input id="password1"  type="password" placeholder="输入密码" style="width: 300px ;height:40px; margin-bottom : 30px;">
+            <button type="button" id="signin" style="width: 300px ;height:40px;margin-bottom : 15px;">登录</button>
+          </form>
+        </div>
+        <div class="error">
+  
+        </div>
+        <div class="change"style="display: flex;justify-content:center;">
+          <button id="toup" style="height:25px">没有账号?</button>
+        </div>
+      </div>
+      <div class="signup">
+        <div class="title">
+          用户注册
+        </div>
+        <div class="formcontain">
+          <form>
+            <input id="phone2" type="text" placeholder="输入手机号" style="width: 300px ;height:40px; margin-bottom : 15px;">
+            <input id="password2" type="password" placeholder="输入密码" style="width: 300px ;height:40px; margin-bottom : 15px;">
+            <input id="password3" type="password" placeholder="再次输入密码" style="width: 300px ;height:40px; margin-bottom : 30px;">
+            <button type="button" id="signup"  style="width: 300px ;height:40px; margin-bottom : 15px;">注册</button>
+          </form>
+        </div>
+        <div class="error">
+  
+        </div>
+        <div class="change" style="display: flex;justify-content:center;">
+          <button id="toin" style="height:25px">去登录</button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/change.js"></script>
     <div class="before">
       <div class="logo">
         <h1><a href="https://leetcode.cn/">力扣</a></h1>
@@ -49,11 +90,18 @@
       </div>
       <script src="./js/search.js"></script>
       <ul>
-        <li><a href="#">注册</a></li>
+        <li class="callup"><a href="#">注册</a></li>
         <li>或</li>
-        <li><a href="#">登录</a></li>
+        <li class="callin"><a href="#">登录</a></li>
       </ul>
       <div class="outer"><div class="vip"><a href="#">plus会员</a></div></div>
+      <div class="idimg">
+        <img src="./image/默认头像.png">
+      </div>
+      <div class="exit">
+        <button>退出</button>
+      </div>
+      <script src="./js/sign.js"></script>
     </div>
   </div>
   <div class="storeextent">
@@ -117,25 +165,25 @@
         <ul>
           <li>
             <div class="paper">
-              <div class="details">
-                <div class="imgbox">
-                  <img src="./image/content1.jpg" width="40px" height="40px">
-                  <div class="name">希儿</div>
-                </div>
-                <div class="brief">
-                  简介
-                </div>
-                <div class="operate">
-                  <div class="text">
-                    私信
-                  </div>
-                  <div class="subscribe">
-                    关注
-                  </div>
-                </div>
-              </div>
               <div class="pp">
                 <img src="./image/content1.jpg">
+                <div class="details">
+                  <div class="imgbox">
+                    <img src="./image/content1.jpg" width="40px" height="40px">
+                    <div class="name">希儿</div>
+                  </div>
+                  <div class="brief">
+                    简介
+                  </div>
+                  <div class="operate">
+                    <div class="text">
+                      私信
+                    </div>
+                    <div class="subscribe">
+                      关注
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="imgbox">
                 <img src="./image/content1.jpg" width="150px" height="150px">
@@ -152,25 +200,25 @@
           </li>
           <li>
             <div class="paper">
-              <div class="details">
-                <div class="imgbox">
-                  <img src="./image/content2.jpg" width="40px" height="40px">
-                  <div class="name">星</div>
-                </div>
-                <div class="brief">
-                  简介
-                </div>
-                <div class="operate">
-                  <div class="text">
-                    私信
-                  </div>
-                  <div class="subscribe">
-                    关注
-                  </div>
-                </div>
-              </div>
               <div class="pp">
                 <img src="./image/content2.jpg">
+                <div class="details">
+                  <div class="imgbox">
+                    <img src="./image/content2.jpg" width="40px" height="40px">
+                    <div class="name">星</div>
+                  </div>
+                  <div class="brief">
+                    简介
+                  </div>
+                  <div class="operate">
+                    <div class="text">
+                      私信
+                    </div>
+                    <div class="subscribe">
+                      关注
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="imgbox">
                 <img src="./image/content2.jpg" width="150px" height="150px">
@@ -191,25 +239,25 @@
           </li>
           <li>
             <div class="paper">
-              <div class="details">
-                <div class="imgbox">
-                  <img src="./image/content3.jpg" width="40px" height="40px">
-                  <div class="name">姬子</div>
-                </div>
-                <div class="brief">
-                  简介
-                </div>
-                <div class="operate">
-                  <div class="text">
-                    私信
-                  </div>
-                  <div class="subscribe">
-                    关注
-                  </div>
-                </div>
-              </div>
               <div class="pp">
                 <img src="./image/content3.jpg">
+                <div class="details">
+                  <div class="imgbox">
+                    <img src="./image/content3.jpg" width="40px" height="40px">
+                    <div class="name">姬子</div>
+                  </div>
+                  <div class="brief">
+                    简介
+                  </div>
+                  <div class="operate">
+                    <div class="text">
+                      私信
+                    </div>
+                    <div class="subscribe">
+                      关注
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="imgbox">
                 <img src="./image/content3.jpg" width="150px" height="150px">
@@ -227,25 +275,25 @@
           </li>
           <li>
             <div class="paper">
-              <div class="details">
-                <div class="imgbox">
-                  <img src="./image/content4.jpg" width="40px" height="40px">
-                  <div class="name">雪衣</div>
-                </div>
-                <div class="brief">
-                  简介
-                </div>
-                <div class="operate">
-                  <div class="text">
-                    私信
-                  </div>
-                  <div class="subscribe">
-                    关注
-                  </div>
-                </div>
-              </div>
               <div class="pp">
                 <img src="./image/content4.jpg">
+                <div class="details">
+                  <div class="imgbox">
+                    <img src="./image/content4.jpg" width="40px" height="40px">
+                    <div class="name">雪衣</div>
+                  </div>
+                  <div class="brief">
+                    简介
+                  </div>
+                  <div class="operate">
+                    <div class="text">
+                      私信
+                    </div>
+                    <div class="subscribe">
+                      关注
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="imgbox">
                 <img src="./image/content4.jpg" width="150px" height="150px">
@@ -263,25 +311,25 @@
           </li>
           <li>
             <div class="paper">
-              <div class="details">
-                <div class="imgbox">
-                  <img src="./image/content5.jpg" width="40px" height="40px">
-                  <div class="name">佩拉</div>
-                </div>
-                <div class="brief">
-                  简介
-                </div>
-                <div class="operate">
-                  <div class="text">
-                    私信
-                  </div>
-                  <div class="subscribe">
-                    关注
-                  </div>
-                </div>
-              </div>
               <div class="pp">
                 <img src="./image/content5.jpg">
+                <div class="details">
+                  <div class="imgbox">
+                    <img src="./image/content5.jpg" width="40px" height="40px">
+                    <div class="name">佩拉</div>
+                  </div>
+                  <div class="brief">
+                    简介
+                  </div>
+                  <div class="operate">
+                    <div class="text">
+                      私信
+                    </div>
+                    <div class="subscribe">
+                      关注
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="imgbox">
                 <img src="./image/content5.jpg" width="150px" height="150px">
@@ -300,7 +348,6 @@
           </li>
         </ul>
       </div>
-      <script src="./js/details.js"></script>
     </div>
     <!-- 侧边栏 -->
     <div class="sidebar">

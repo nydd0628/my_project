@@ -1,10 +1,9 @@
 .sidebar
 {
-  display: fixed;
+  display: none;
   margin-right: 250px;
   width: 400px;
   height: 600px;
-  opacity: 0;
 }
 
 /* 轮播图部分 */

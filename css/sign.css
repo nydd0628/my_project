@@ -1,0 +1,84 @@
+.exit{
+  margin-left: 5px;
+  display:none;
+  width: 50px;
+  height: 20px;
+}
+.sign{
+  z-index: 4;
+  top: 100px;
+  width: 400px;
+  height: 500px;
+  position: fixed;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+  transition: all 5s;
+}
+.sign .signin{
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px;
+  box-sizing: border-box;
+  justify-content: center;
+  border: 4px solid grey;
+  border-radius: 20px;
+  box-shadow: 2px 5px 10px 1px rgba(0, 0, 0,0.3);
+}
+.sign .signin .title{
+  font-size: 40px;
+  height: 100px;
+  width: 350px;
+  text-align: center;
+}
+.sign .signin .formcontain{
+  margin-bottom: 15px;
+  width: 350px;
+  height: 250px;
+}
+.sign .signup .error{
+  text-align: center;
+  width: 350px;
+  height: 20px;
+}
+.sign .signin .change{
+  height: 50px;
+  width: 350px;
+}
+
+.sign .signup{
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px;
+  box-sizing: border-box;
+  justify-content: center;
+  border: 4px solid grey;
+  border-radius: 20px;
+  box-shadow: 2px 5px 10px 1px rgba(0, 0, 0,0.3);
+  display: none;
+}
+.sign .signup .title{
+  font-size: 40px;
+  height: 100px;
+  width: 350px;
+  text-align: center;
+}
+.sign .signup .formcontain{
+  margin-bottom: 15px;
+  width: 350px;
+  height: 250px;
+}
+.sign .signup .error{
+  text-align: center;
+  width: 350px;
+  height: 20px;
+}
+.sign .signup .change{
+  height: 50px;
+  width: 350px;
+}

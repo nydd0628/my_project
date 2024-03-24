@@ -17,19 +17,17 @@
   z-index: 1;
   position: absolute;
   top: 0;
-  left: 35px;
+  left: 30px;
   background-color: white;
   border-radius: 10px;
   border: 1px solid rgb(220, 220, 220 , 0.2);
   box-shadow: 2px 5px 6px 1px rgba(0, 0, 0,0.3) ;
   height: 200px;
   width: 200px;
-  display: flex;
+  display: none;
   padding: 5px;
   box-sizing: border-box;
   flex-wrap: wrap;
-  opacity: 0;
-  transition: all 0.5s;
 }
 .passages .paper .details .imgbox{
   display: flex;
@@ -102,11 +100,17 @@
   border: 1px solid rgb(220, 220, 220 , 0.2);
   box-shadow: 2px 5px 6px 1px rgba(0, 0, 0,0.3) ;
 }
-
+.passages .pp{
+  width: 30px;
+  height: 40px;
+}
 .passages .pp img{
   width: 30px;
   height: 30px;
   background-color: black;
   border-radius: 100%;
   margin-right: 10px;
+}
+.passages .pp:hover .details{
+  display: flex;
 }

@@ -84,6 +84,12 @@
   margin-left: 20px;
   list-style: none;
 }
+.header .idimg img{
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin-left: 10px;
+}
 .header .outer{
   background-color: rgb(255, 165, 0 , 0.3);
   margin-left: 20px;
