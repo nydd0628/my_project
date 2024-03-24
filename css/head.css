@@ -8,6 +8,7 @@
   box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 } 
 
 .header .before{
@@ -47,7 +48,34 @@
 .header .search{
   width: 25px;
   height: 25px;
+}
+.header .searchextent
+{
+  box-sizing: border-box;
+  border: 1px solid rgb(128, 128, 128,0.2);
+  border-radius: 15px;
+  box-shadow:2px 5px 6px 1px rgba(0, 0, 0,0.3) ;
+  position: absolute;
+  background-color: blue;
+  width: 170px;
+  height: 200px;
+  top: 36px;
+  display: none;
 } 
+.header .searchextent .title{
+  width: 160px;
+  height: 20px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.header .searchextent .history li{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .header .after ul{
   display:flex;
 }
@@ -88,4 +116,3 @@
   flex-wrap: wrap;
   background-color: rgb(234, 234, 234,0.2);
 }
- 

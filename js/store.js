@@ -2,6 +2,7 @@ const store = document.querySelector('#store')
 const content = document.querySelector('.storeextent div')
 const storeextent = document.querySelector('.storeextent')
 let control1 = 0;
+let control6 = 0;
 store.addEventListener('click',() => {
 if(control1 === 0)
 {
