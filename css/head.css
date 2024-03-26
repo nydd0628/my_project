@@ -56,11 +56,12 @@
   border-radius: 15px;
   box-shadow:2px 5px 6px 1px rgba(0, 0, 0,0.3) ;
   position: absolute;
-  background-color: blue;
+  background-color: white;
   width: 170px;
   height: 200px;
   top: 36px;
   display: none;
+  flex-wrap: wrap;
 } 
 .header .searchextent .title{
   width: 160px;
@@ -71,10 +72,35 @@
   text-align: center;
   margin-bottom: 10px;
 }
-.header .searchextent .history li{
+.header .searchextent .history ul
+{
+  height: 160px;
+  width: 170px;
+  margin-bottom: 5px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  align-items: start;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.header .searchextent .history li{
+  width: 170px;
+  height: 20px;
+  display: flex;
+  margin-left: 20px;
+  margin-right: 10px;
+  justify-content: space-between;
+}
+.header .searchextent .history li .imgbox{
+  width: 10px;
+  margin-left: 10px;
+}
+.header .searchextent .history li .brief{
+  width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.header .searchextent .history li .brief:hover{
+  background-color: rgb(254, 245, 228,0.5);
 }
 .header .after ul{
   display:flex;
