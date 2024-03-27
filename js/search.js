@@ -2,25 +2,26 @@ const search = document.querySelector('.header .search')
 const searchextent = document.querySelector('.header .after .searchextent')
 const searchdetitle = document.querySelector('.searchextent .title')
 const historylist = document.querySelector('.searchextent .history ul')
+const historybrief = document.querySelectorAll('.searchextent .history li .brief a')
 let control2 = 0
 const recommendData = [];
 
-function listEmerge(data)
+function listEmerge(data,mode)
 {
   let listItems = "";
   for(let i = 0 ; i < data.length ; i ++)
   {
-    if(data[i] === '无')
+    if(mode === 1)
     {
       listItems +=`<li><div class="brief"><a href="#">${data[i]}</a></div></li>`
     }
     else{
-      listItems +=`<li><div class="brief${i+1}"><a href="#">${data[i]}</a></div>
-    <div class="imgbox${i+1}"><img src="./image/叉.png" width="10px" height="10px"></div></li>`
+      listItems +=`<li><div class="brief"><a href="#">${data[i]}</a></div>
+    <div class="imgbox"><img src="./image/叉.png" width="10px" height="10px"></div></li>`
     }
   }
   historylist.innerHTML = listItems
-  searchextent.style.display = 'block'
+  searchextent.style.display = 'flex'
 }
 
 
@@ -38,44 +39,59 @@ search.addEventListener('click',()=>{
     {
       searchdetitle.style.display = 'none'
       const suggestion = recommendData.filter(item => item.includes(inputValue))
-      listEmerge(suggestion)
+      listEmerge(suggestion,1)
     }
     else{
       searchdetitle.style.display = 'flex'
       historyItems = JSON.parse(localStorage.getItem('history'))
-      listEmerge(historyItems)
+      listEmerge(historyItems,0)
+      const deleteItems = document.querySelectorAll('.history li .imgbox')
+      for(let i = 0 ; i < deleteItems.length ; i ++)
+      {
+        deleteItems[i].addEventListener('click',()=>{
+          deleteItems[i].parentNode.parentNode.removeChild( deleteItems[i].parentNode)
+          const arry= JSON.parse(localStorage.getItem('history'))
+          for(let i = 0 ; i < arry.length ; i ++)
+          {
+            if(arry[i] === deleteItems[i].previousElementSibling.childNodes[0].innerHTML)
+            {
+              arry.splice(i,1)
+              localStorage.setItem('history',JSON.stringify(arry))
+              break
+            }
+          }
+      })
     }
-  }
+  }}
 
   function searchrecord(){
     const inputValue = searchinput.value.trim()
-    const arry= JSON.parse(localStorage.getItem('history'))
-    let c = 0
-    for(let i = 0 ; i < arry.length ; i ++)
+    if(inputValue)
     {
-      if(arry[i] === inputValue)
+      const arry= JSON.parse(localStorage.getItem('history'))
+      let c = 0
+      for(let i = 0 ; i < arry.length ; i ++)
       {
-        c = 1;
-        break
+        if(arry[i] === inputValue)
+        {
+          c = 1;
+          break
+        }
       }
+      if(!c)
+      {
+        arry.unshift(inputValue)
+      }
+      localStorage.setItem('history',JSON.stringify(arry))
     }
-    if(!c)
-    {
-      arry.unshift(inputValue)
-    }
-    localStorage.setItem('history',JSON.stringify(arry))
+    historylist.innerHTML = ''
+    searchextent.style.display = 'none'
   }
 
   searchinput.addEventListener('focus',showlist)
   searchinput.addEventListener('input',showlist)
-  // searchinput.addEventListener('blur',(e)=>{
-  //   historylist.innerHTML = ''
-  //   searchextent.style.display = 'none'
-  //   console.log(e)
-  // })
   const searchbutton = document.querySelector('#searchbutton')
   searchbutton.addEventListener('click',searchrecord)
-  const deletEbutton = document.querySelector('.history li .imgbox')
   const clearbutton = document.querySelector(".header .searchextent .title .imgbox")
   clearbutton.addEventListener('click',()=>{
     localStorage.setItem('history',JSON.stringify([]))

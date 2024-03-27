@@ -5,6 +5,7 @@ const a = document.querySelectorAll('a')
 const describe = document.querySelector('.sidebar .dark .describe')
 const blackmode = document.querySelector('.sidebar .dark .black')
 let control3 = 0
+console.log(a)
 whitemode.addEventListener(
   'click',()=>{
     if(control3 === 0)
@@ -24,6 +25,7 @@ whitemode.addEventListener(
       whitemode.style.opacity = '0'
       blackmode.style.opacity = '1'
       control3 = 1;
+      searchextent.style.background = 'black'
     }
   }
 )
@@ -47,6 +49,7 @@ blackmode.addEventListener(
       whitemode.style.opacity = '1'
       blackmode.style.opacity = '0'
       control3 = 0;
+      searchextent.style.background = 'white'
     }
   }
 )
