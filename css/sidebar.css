@@ -40,6 +40,7 @@
 .sidebar .carousel .left:hover
 {
   background-color: rgba(255, 255, 255,0.6);
+  cursor: pointer;
 }
 
 .sidebar .carousel .right{
@@ -56,6 +57,7 @@
 .sidebar .carousel .right:hover
 {
   background-color: rgba(255, 255, 255,0.6);
+  cursor: pointer;
 }
 
 .sidebar .carousel .change{
@@ -75,6 +77,9 @@
   background-color: rgba(255, 255, 255,0.5);
   float: left;
   transition: all,0.3s;
+}
+.sidebar .carousel .change li:hover{
+  cursor: pointer;
 }
 .sidebar .carousel .change .active{
   background-color: white;
@@ -116,6 +121,9 @@ margin-right: 10px;
   left: 0;
   opacity: 1;
 }
+.sidebar .dark .switch .white:hover{
+  cursor: pointer;
+}
 .sidebar .dark .switch .black{
   height: 20px;
   width: 20px;
@@ -126,7 +134,9 @@ margin-right: 10px;
   top: 0;
   opacity: 0;
 }
-
+.sidebar .dark .switch .black:hover{
+  cursor: pointer;
+}
 /* 返回部分 */
 .sidebar .guidance{
   margin-left: 100px;
@@ -138,6 +148,9 @@ margin-right: 10px;
 .sidebar .guidance .tip{
   width: 35px;
   height: 35px;
+}
+.sidebar .guidance .button:hover{
+  cursor: pointer;
 }
 /* 倒计时 */
 .sidebar .timeout ul{

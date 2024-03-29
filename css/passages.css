@@ -110,6 +110,9 @@
   border-radius: 100%;
   margin-right: 10px;
 }
+.passages .pp img:hover{
+  cursor: pointer;
+}
 .passages .pp:hover .details{
   display: flex;
 }

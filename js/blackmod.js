@@ -5,7 +5,6 @@ const a = document.querySelectorAll('a')
 const describe = document.querySelector('.sidebar .dark .describe')
 const blackmode = document.querySelector('.sidebar .dark .black')
 let control3 = 0
-console.log(a)
 whitemode.addEventListener(
   'click',()=>{
     if(control3 === 0)
