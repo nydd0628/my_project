@@ -25,10 +25,10 @@ whitemode.addEventListener(
       blackmode.style.opacity = '1'
       control3 = 1;
       searchextent.style.background = 'black'
+      sign.style.background = 'black'
     }
   }
 )
-
 blackmode.addEventListener(
   'click',()=>{
     if(control3 === 1)
@@ -49,6 +49,7 @@ blackmode.addEventListener(
       blackmode.style.opacity = '0'
       control3 = 0;
       searchextent.style.background = 'white'
+      sign.style.background = 'white'
     }
   }
 )

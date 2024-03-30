@@ -6,6 +6,7 @@ const callup = document.querySelector('.callup')
 const error1 = document.querySelector('.signin .error')
 const inbutton = document.querySelector('.sign .signin #signin')
 let show = 0
+//3种唤出登录注册栏的方式
 idimg.addEventListener('click',()=>{
 
   signin.style.display = 'flex'
@@ -74,7 +75,7 @@ function getInputValue(idnum){
 let usernumber = 0
 const touxiang = document.querySelector('.idimg img')
 const exit = document.querySelector('.exit')
-
+//登录
 inbutton.addEventListener('click',()=>{
   usernumber = +localStorage.getItem('usernumber')
   const phone1 = getInputValue('phone1');
@@ -108,6 +109,7 @@ inbutton.addEventListener('click',()=>{
 })
 const error2 = document.querySelector('.signup .error')
 const upbutton = document.querySelector('.sign .signup #signup')
+//注册
 upbutton.addEventListener('click',()=>{
   usernumber = +localStorage.getItem('usernumber')
   const phone2 = getInputValue('phone2');
@@ -146,6 +148,7 @@ upbutton.addEventListener('click',()=>{
   }
 })
 const exitbutton = document.querySelector('.exit button')
+//退出登录
 exitbutton.addEventListener('click',()=>
 {
   s = 1;

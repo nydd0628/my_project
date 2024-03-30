@@ -4,8 +4,9 @@ const searchdetitle = document.querySelector('.searchextent .title')
 const historylist = document.querySelector('.searchextent .history ul')
 const historybrief = document.querySelectorAll('.searchextent .history li .brief a')
 let control2 = 0
-const recommendData = [];
-
+//建议库
+const recommendData = ['建议1'];
+//显示内容
 function listEmerge(data,mode)
 {
   let listItems = "";
@@ -28,42 +29,46 @@ function listEmerge(data,mode)
 
 search.addEventListener('click',()=>{
   if(control2 === 0)
-  {search.style.width = '200px'
-  search.style.display = 'flex'
-  search.innerHTML = '<input type="text" placeholder="输入搜索内容" id="search"><button id = "searchbutton"> 搜索</button>'
-  control2 = 1
-  const searchinput = document.querySelector("#search")
-  function showlist(){
-    const inputValue = searchinput.value.trim()
-    if(inputValue.length > 0)
-    {
-      searchdetitle.style.display = 'none'
-      const suggestion = recommendData.filter(item => item.includes(inputValue))
-      listEmerge(suggestion,1)
-    }
-    else{
-      searchdetitle.style.display = 'flex'
-      historyItems = JSON.parse(localStorage.getItem('history'))
-      listEmerge(historyItems,0)
-      const deleteItems = document.querySelectorAll('.history li .imgbox')
-      for(let i = 0 ; i < deleteItems.length ; i ++)
+  {
+    //显示搜索窗口
+    search.style.width = '200px'
+    search.style.display = 'flex'
+    search.innerHTML = '<input type="text" placeholder="输入搜索内容" id="search"><button id = "searchbutton"> 搜索</button>'
+    control2 = 1
+    const searchinput = document.querySelector("#search")
+    //根据输入调整显示模式
+    function showlist(){
+      const inputValue = searchinput.value.trim()
+      if(inputValue.length > 0)
       {
-        deleteItems[i].addEventListener('click',()=>{
-          deleteItems[i].parentNode.parentNode.removeChild( deleteItems[i].parentNode)
-          const arry= JSON.parse(localStorage.getItem('history'))
-          for(let i = 0 ; i < arry.length ; i ++)
-          {
-            if(arry[i] === deleteItems[i].previousElementSibling.childNodes[0].innerHTML)
+        searchdetitle.style.display = 'none'
+        const suggestion = recommendData.filter(item => item.includes(inputValue))
+        listEmerge(suggestion,1)
+      }
+      else{
+        searchdetitle.style.display = 'flex'
+        historyItems = JSON.parse(localStorage.getItem('history'))
+        listEmerge(historyItems,0)
+        const deleteItems = document.querySelectorAll('.history li .imgbox')
+        for(let i = 0 ; i < deleteItems.length ; i ++)
+        {
+          //对应删除
+          deleteItems[i].addEventListener('click',()=>{
+            deleteItems[i].parentNode.parentNode.removeChild( deleteItems[i].parentNode)
+            const arry= JSON.parse(localStorage.getItem('history'))
+            for(let i = 0 ; i < arry.length ; i ++)
             {
-              arry.splice(i,1)
-              localStorage.setItem('history',JSON.stringify(arry))
-              break
+              if(arry[i] === deleteItems[i].previousElementSibling.childNodes[0].innerHTML)
+              {
+                arry.splice(i,1)
+                localStorage.setItem('history',JSON.stringify(arry))
+                break
+              }
             }
-          }
-      })
-    }
+        })
+      }
   }}
-
+  //按下搜索键，保存历史记录
   function searchrecord(){
     const inputValue = searchinput.value.trim()
     if(inputValue)
@@ -93,6 +98,7 @@ search.addEventListener('click',()=>{
   const searchbutton = document.querySelector('#searchbutton')
   searchbutton.addEventListener('click',searchrecord)
   const clearbutton = document.querySelector(".header .searchextent .title .imgbox")
+  //清除按钮
   clearbutton.addEventListener('click',()=>{
     localStorage.setItem('history',JSON.stringify([]))
     historylist.innerHTML = ''

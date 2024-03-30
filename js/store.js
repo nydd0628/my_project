@@ -1,5 +1,5 @@
 const store = document.querySelector('#store')
-const content = document.querySelector('.storeextent div')
+const content = document.querySelector('.storeextent')
 const storeextent = document.querySelector('.storeextent')
 let control1 = 0;
 let control6 = 0;
@@ -14,3 +14,4 @@ else{
   control1 = 0;
 }
 })
+//商城的外展部分

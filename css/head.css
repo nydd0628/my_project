@@ -81,6 +81,7 @@
   top: 36px;
   display: none;
   flex-wrap: wrap;
+  z-index: 3;
 } 
 .header .searchextent .title{
   width: 160px;
@@ -90,6 +91,9 @@
   justify-content: space-around;
   text-align: center;
   margin-bottom: 10px;
+}
+.header .searchextent .title .imgbox:hover{
+  cursor: pointer;
 }
 .header .searchextent .history ul
 {
@@ -112,6 +116,9 @@
 .header .searchextent .history li .imgbox{
   width: 10px;
   margin-left: 10px;
+}
+.header .searchextent .history li .imgbox:hover{
+  cursor: pointer;
 }
 .header .searchextent .history li .brief{
   width: 100px;
@@ -152,13 +159,14 @@
   cursor: pointer;
 }
 .storeextent{
-  height: 70px;
-  z-index: 1;
-}
-.storeextent div
-{
-  margin-left: 650px;
+  position: absolute;
   display: none;
+  height: 70px;
+  top: 50;
+  left: 650px;
+  z-index: 1;
+  border-radius: 5px;
+  background-color: white;
 }
 .storeextent ul
 {

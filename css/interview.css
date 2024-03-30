@@ -5,6 +5,14 @@
   justify-content: space-between;
   margin-left: 20px;
 }
+.interview .title .introduce{
+  font-size: 20px;
+  font-weight: 600;
+}
+.interview .title .more{
+  font-weight: 300;
+  font-size: 13px;
+}
 .interview .show{
   margin-top: 10px;
   width: 720px;
@@ -14,7 +22,7 @@
 }
 .interview .show ul{
   display: flex;
-  transition: all 2s;
+  transition: all 1s;
   transform: translateX(none);
 }
 .interview .show .image img{
@@ -35,7 +43,8 @@
 .interview .show ul li .hot{
   width: 140px;
   height: 20px;
-  font-size: 15px;
+  font-size: 13px;
+  font-weight: 300;
 }
 .interview .show ul li .image{
   margin-right: 16px;

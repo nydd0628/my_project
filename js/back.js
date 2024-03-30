@@ -1,4 +1,4 @@
-const back = document.querySelector('.sidebar .function .guidance')
+const back = document.querySelector('.guidance .button')
 back.addEventListener('click',()=>{
   let n = setInterval(()=>{
     if(document.documentElement.scrollTop > 0)
@@ -17,3 +17,4 @@ back.addEventListener('click',()=>{
     }
   })
 },1000)
+// 试图用定时器实现
